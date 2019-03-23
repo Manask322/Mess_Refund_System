@@ -59,6 +59,24 @@ class UserProfile(models.Model):
         self.image.save("%s.png" % self.user.id,
                         ContentFile(s))
 
+class Student(models.Model):
+    student_id=models.CharField(max_length=10,primary_key=True)
+    phone_number=models.IntegerField(default=999)
+    user=models.OneToOneField(User, on_delete=models.CASCADE, related_name="Student")
+    block=models.IntegerField(default=999)
+    mess=models.IntegerField(default=999)
+
+    def __str__(self):              # __unicode__ on Python 2
+        return self.student_id
+
+class Messmanager(models.Model):
+    user=models.OneToOneField(User, on_delete=models.CASCADE, related_name="Messmanager")
+    mess=models.IntegerField(primary_key=True,default=999)
+    qrcode=models.TextField(max_length=500)
+    is_active=models.BooleanField(default=True)
+
+    def __str__(self):              # __unicode__ on Python 2
+        return self.mess
 
 @receiver(post_save, sender=User)
 def create_user_profile(sender, instance, created, **kwargs):
@@ -71,3 +89,29 @@ def create_user_profile(sender, instance, created, **kwargs):
 @receiver(post_save, sender=User)
 def save_user_profile(sender, instance, **kwargs):
     instance.user_profile.save()
+
+@receiver(post_save, sender=User)
+def create_student(sender, instance, created, **kwargs):
+    if created and not kwargs.get('raw', False):
+        print("1")
+        Student.objects.create(user=instance)
+
+
+@receiver(post_save, sender=User)
+def save_student(sender, instance, **kwargs):
+    print("2")
+    instance.Student.save()
+
+@receiver(post_save, sender=User)
+def create_messmanager(sender, instance, created, **kwargs):
+    if kwargs.get('raw', False):
+        return False
+    if created:
+        print("3")
+        Messmanager.objects.create(user=instance)
+
+
+@receiver(post_save, sender=User)
+def save_messmanager(sender, instance, **kwargs):
+    print("1")
+    instance.Messmanager.save()
