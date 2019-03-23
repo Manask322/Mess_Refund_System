@@ -23,8 +23,8 @@ class UserProfileView(TemplateView, LoginRequiredMixin):
         if user_profile_form.is_valid() and user_detail_form.is_valid() and student_form.is_valid() and messmanager_form.is_valid():
             user_profile_form.save()
             user_detail_form.save()
-            #student_form.save()
-            #messmanager_form.save()
+            student_form.save()
+            messmanager_form.save()
             return redirect(reverse('profile'))
         else:
             print(user_profile_form.errors, "++++++")

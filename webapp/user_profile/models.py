@@ -60,7 +60,7 @@ class UserProfile(models.Model):
                         ContentFile(s))
 
 class Student(models.Model):
-    student_id=models.CharField(max_length=10,primary_key=True)
+    student_id=models.CharField(max_length=10,default="0000")
     phone_number=models.IntegerField(default=999)
     user=models.OneToOneField(User, on_delete=models.CASCADE, related_name="Student")
     block=models.IntegerField(default=999)
@@ -71,7 +71,7 @@ class Student(models.Model):
 
 class Messmanager(models.Model):
     user=models.OneToOneField(User, on_delete=models.CASCADE, related_name="Messmanager")
-    mess=models.IntegerField(primary_key=True,default=999)
+    mess=models.IntegerField(default=999)
     qrcode=models.TextField(max_length=500)
     is_active=models.BooleanField(default=True)
 
@@ -92,7 +92,7 @@ def save_user_profile(sender, instance, **kwargs):
 
 @receiver(post_save, sender=User)
 def create_student(sender, instance, created, **kwargs):
-    if created and not kwargs.get('raw', False):
+    if created :
         print("1")
         Student.objects.create(user=instance)
 
@@ -104,8 +104,6 @@ def save_student(sender, instance, **kwargs):
 
 @receiver(post_save, sender=User)
 def create_messmanager(sender, instance, created, **kwargs):
-    if kwargs.get('raw', False):
-        return False
     if created:
         print("3")
         Messmanager.objects.create(user=instance)
@@ -113,5 +111,7 @@ def create_messmanager(sender, instance, created, **kwargs):
 
 @receiver(post_save, sender=User)
 def save_messmanager(sender, instance, **kwargs):
-    print("1")
+        # User object updated
     instance.Messmanager.save()
+
+    
