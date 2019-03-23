@@ -3,7 +3,7 @@ from django.views.generic import TemplateView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic.edit import FormView
 from django.shortcuts import redirect, reverse
-from user_profile.forms import UserProfileModelForm, UserDetailModelForm
+from user_profile.forms import UserProfileModelForm, UserDetailModelForm, StudentForm, MessmanagerForm
 
 
 # Create your views here.
@@ -18,9 +18,13 @@ class UserProfileView(TemplateView, LoginRequiredMixin):
                                                                                 instance=request.user.user_profile)
         context['user_detail_form'] = user_detail_form = UserDetailModelForm(request.POST,
                                                                              instance=request.user)
-        if user_profile_form.is_valid() and user_detail_form.is_valid():
+        context['student_form'] = student_form = StudentForm(request.POST,instance=request.user.Student)
+        context['messmanager_form'] = messmanager_form = MessmanagerForm(request.POST,instance=request.user.Messmanager)
+        if user_profile_form.is_valid() and user_detail_form.is_valid() and student_form.is_valid() and messmanager_form.is_valid():
             user_profile_form.save()
             user_detail_form.save()
+            #student_form.save()
+            #messmanager_form.save()
             return redirect(reverse('profile'))
         else:
             print(user_profile_form.errors, "++++++")
@@ -31,6 +35,8 @@ class UserProfileView(TemplateView, LoginRequiredMixin):
         context = super(UserProfileView, self).get_context_data(**kwargs)
         context['user_profile_form'] = UserProfileModelForm(instance=request.user.user_profile)
         context['user_detail_form'] = UserDetailModelForm(instance=request.user)
+        context['student_form'] = StudentForm(instance=request.user.Student)
+        context['messmanager_form'] = MessmanagerForm(instance=request.user.Messmanager)
         return render(request, self.template_name, context=context)
 
 
