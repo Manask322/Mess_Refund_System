@@ -1,5 +1,6 @@
 from django.conf.urls import url, include
+from django.urls import path
 
 urlpatterns = [
-    url(r'^accounts/', include('allauth.urls')),
+    path('accounts/', include('allauth.urls')),
 ]

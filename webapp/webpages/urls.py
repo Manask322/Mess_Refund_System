@@ -1,7 +1,8 @@
 from django.conf.urls import url, include
 from . import views
+from django.urls import path
 
 urlpatterns = [
-    url(r'^$', views.HomePageView.as_view(), name="homepage"),
-    url(r'^terms$', views.TermsView.as_view(), name="terms"),
+    path('', views.HomePageView.as_view(), name="homepage"),
+    path('terms', views.TermsView.as_view(), name="terms"),
 ]

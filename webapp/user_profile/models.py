@@ -44,6 +44,7 @@ class UserProfile(models.Model):
     bio = models.TextField(max_length=500, blank=True, null=True, default=None, verbose_name="Write about your self")
     location = models.CharField(max_length=30, blank=True, null=True, default=None)
     birth_date = models.DateField(null=True, blank=True)
+    is_student = models.BooleanField(default=True)
 
     def generate_img(self):
         f = BytesIO()
@@ -75,8 +76,8 @@ class Messmanager(models.Model):
     qrcode=models.TextField(max_length=500)
     is_active=models.BooleanField(default=True)
 
-    def __str__(self):              # __unicode__ on Python 2
-        return self.mess
+    # def __str__(self):              # __unicode__ on Python 2
+    #     return self.mess
 
 @receiver(post_save, sender=User)
 def create_user_profile(sender, instance, created, **kwargs):

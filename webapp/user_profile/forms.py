@@ -8,7 +8,7 @@ User = get_user_model()
 class UserProfileModelForm(forms.ModelForm):
     class Meta:
         model = UserProfile
-        fields = ('image', 'bio', 'location')
+        fields = ('image', 'bio', 'location','is_student')
 
 
 class UserDetailModelForm(forms.ModelForm):
@@ -16,7 +16,7 @@ class UserDetailModelForm(forms.ModelForm):
 
     class Meta:
         model = User
-        fields = ('first_name', 'last_name',)
+        fields = ('first_name', 'last_name')
 
 class StudentForm(forms.ModelForm):
     class Meta:

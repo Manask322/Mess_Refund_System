@@ -17,12 +17,14 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from django.conf.urls.static import static
 from django.conf import settings
+from user_profile import views
+from django.urls import path
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'^', include('user_registration_bs4.urls')),
-    url(r'^', include('user_profile.urls')),
-    url(r'^', include('webpages.urls')),
+    path('admin/', admin.site.urls),
+    path('', include('user_profile.urls')),
+    path('', include('user_registration_bs4.urls')),
+    path('', include('webpages.urls')),
 ]
 
 if settings.DEBUG:

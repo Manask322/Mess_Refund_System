@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+{% load bootstrap4 %}
+
+{% block head_title %}{% trans "User Profile" %}{% endblock %}
+
+{% block content %}
+    {{ user }}
+    {{ current_user }}
+{% endblock %}
