@@ -66,6 +66,7 @@ class Student(models.Model):
     user=models.OneToOneField(User, on_delete=models.CASCADE, related_name="Student")
     block=models.IntegerField(default=999)
     mess=models.IntegerField(default=999)
+    refund=models.FloatField(default=22000)
 
     def __str__(self):              # __unicode__ on Python 2
         return self.student_id
@@ -114,5 +115,3 @@ def create_messmanager(sender, instance, created, **kwargs):
 def save_messmanager(sender, instance, **kwargs):
         # User object updated
     instance.Messmanager.save()
-
-    
