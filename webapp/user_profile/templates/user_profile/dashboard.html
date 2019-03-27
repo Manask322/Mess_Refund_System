@@ -6,6 +6,12 @@
 {% block head_title %}{% trans "User Profile" %}{% endblock %}
 
 {% block content %}
+    {% if notice %}
+    <div class="alert alert-dismissible text-center" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <strong>{{ notice }}</strong>
+    </div>
+    {% endif %}
     <div class="x_panel" style="margin-top: 1vh; border-style: none">
         <div style="display: inline-flex">
           <h2 style="font-size: 3vh; margin-left: 1vw"><b>Mess Timeline</b></h2>
