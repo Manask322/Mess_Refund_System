@@ -116,10 +116,12 @@ class UserProfileView(TemplateView, LoginRequiredMixin):
 class UserStatusView(TemplateView, LoginRequiredMixin):
     template_name = "user_profile/status.html"
 
+meal_type = ["breakfast","lunch","snack","dinner","be hungry"]
+
 def dashboard(request):
     global is_scanned
     current_user = User.objects.get(id = request.user.id)
-    remaining_amount = current_user.Student.refund
+    remaining_amount = 22000.0 - current_user.Student.refund
     cur_time=dt.datetime.now().hour
     print("time is",cur_time )
     if cur_time < 10 and cur_time > 7:
@@ -148,7 +150,7 @@ def dashboard(request):
     else:
         deduct = 0
     if is_scanned:
-        remaining_amount = refund - deduct
+        remaining_amount = remaining_amount - deduct
         is_scanned = False
 
     is_student = current_user.user_profile.is_student
@@ -157,7 +159,7 @@ def dashboard(request):
         user = current_user.Student
     else:
         user = current_user.Messmanager
-    return render(request,"user_profile/dashboard.html",{'user':user, 'current_user':current_user,'refund':total_refund, 'meal':meal,"amount_remaining":remaining_amount})
+    return render(request,"user_profile/dashboard.html",{'user':user, 'current_user':current_user,'refund':total_refund, 'meal':meal,"amount_remaining":remaining_amount,'meal_type':meal_type})
 
 def profile_view(request):
     qr_val=main()

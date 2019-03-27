@@ -13,7 +13,7 @@ from django.utils import timezone
 
 logger = logging.getLogger(__name__)
 
-
+mess_Amount  = 22000.0
 # Create your models here.
 def upload_avatar_to(instance, filename):
     filename_base, filename_ext = os.path.splitext(filename)
