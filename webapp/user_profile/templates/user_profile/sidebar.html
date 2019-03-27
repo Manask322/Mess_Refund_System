@@ -78,7 +78,7 @@
         <ul class="list-group">
         	<center>
             <li class="w3-bar-item w3-button"><a href="{% url 'profile' %}">Profile Details</a></li>
-            <li class="w3-bar-item w3-button"><a href="{% url 'profile' %}">Scan QR</a></li>
+            <li class="w3-bar-item w3-button"><a href="{% url 'scan_result' %}">Scan QR</a></li>
             <li class="w3-bar-item w3-button"><a href="{% url 'dashboard' %}">Dashboard</a></li>
             <li class="w3-bar-item w3-button"><a href="{% url 'status' %}">Account Status</a></li>
         	</center>
@@ -91,13 +91,13 @@ function openNav() {
 	var flag = document.getElementById("mySidenav").style.width;
 	if(flag!='450px'){
 	  document.getElementById("mySidenav").style.width = "450px";
-	  //document.getElementById("main").style.marginLeft = "25%";
-	  document.body.style.backgroundColor = "rgba(0,0,0,.5);";
+	  document.getElementById("main").style.marginLeft = "25%";
+	  document.body.style.backgroundColor = "rgba(0,1,0,.4);";
 	}
 	//	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 	else{
 	  document.getElementById("mySidenav").style.width = "0";
-	  //document.getElementById("main").style.marginLeft= "0";
+	  document.getElementById("main").style.marginLeft= "0";
 	  document.body.style.backgroundColor = "white";
 	}
 }

@@ -7,24 +7,238 @@
 
 {% block content %}
 <br/><br/><br/>
-<style type="text/css">
-	.dash-container{
-		background-color: #efebe4;
-	}
-	.card{
+<style>
 
-	}
-	.dash-container .mess-details{
+    .card {
+      background: #fff;
+      border-radius: 15px;
+      display: inline-block;
+      height: 150px;
+      margin: 1rem;
+      width: 90%;
+    }
 
-	}
+    
+  
+    .card-1 {
+      box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+  
+    }
+  
+    .card-1:hover {
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  
+    }
+  
+    .bs-wizard {
+      margin-top: 40px;
+    }
+  
+    /*Form Wizard*/
+    .bs-wizard {
+      border-bottom: solid 1px #e0e0e0;
+      padding: 0 0 10px 0;
+    }
+  
+    .bs-wizard > .bs-wizard-step {
+      padding: 0;
+      position: relative;
+    }
+  
+    .bs-wizard > .bs-wizard-step + .bs-wizard-step {
+    }
+  
+    .bs-wizard > .bs-wizard-step .bs-wizard-stepnum {
+      color: #595959;
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+  
+    .bs-wizard > .bs-wizard-step .bs-wizard-info {
+      color: #999;
+      font-size: 14px;
+    }
+  
+    .bs-wizard > .bs-wizard-step > .bs-wizard-dot {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      display: block;
+      background: #8E3E08;
+      top: 45px;
+      left: 50%;
+      margin-top: -15px;
+      margin-left: -15px;
+      border-radius: 50%;
+    }
+  
+    .bs-wizard > .bs-wizard-step > .bs-wizard-dot:after {
+      content: ' ';
+      width: 14px;
+      height: 14px;
+      background: #8E3E08;
+      border-radius: 50px;
+      position: absolute;
+      top: 8px;
+      left: 8px;
+    }
+  
+    .bs-wizard > .bs-wizard-step > .progress {
+      position: relative;
+      border-radius: 0px;
+      height: 8px;
+      box-shadow: none;
+      margin: 20px 0;
+    }
+  
+    .bs-wizard > .bs-wizard-step > .progress > .progress-bar {
+      width: 0px;
+      box-shadow: none;
+      background: #8E3E08;
+    }
+  
+    .bs-wizard > .bs-wizard-step.complete > .progress > .progress-bar {
+      width: 100%;
+    }
+  
+    .bs-wizard > .bs-wizard-step.active > .progress > .progress-bar {
+      width: 50%;
+    }
+  
+    .bs-wizard > .bs-wizard-step:first-child.active > .progress > .progress-bar {
+      width: 0%;
+    }
+  
+    .bs-wizard > .bs-wizard-step:last-child.active > .progress > .progress-bar {
+      width: 100%;
+    }
+  
+    .bs-wizard > .bs-wizard-step.disabled > .bs-wizard-dot {
+      background-color: #f5f5f5;
+    }
+  
+    .bs-wizard > .bs-wizard-step.disabled > .bs-wizard-dot:after {
+      opacity: 0;
+    }
+  
+    .bs-wizard > .bs-wizard-step:first-child > .progress {
+      left: 50%;
+      width: 50%;
+    }
+  
+    .bs-wizard > .bs-wizard-step:last-child > .progress {
+      width: 50%;
+    }
+  
+    .bs-wizard > .bs-wizard-step.disabled a.bs-wizard-dot {
+      pointer-events: none;
+    }
+  
+    @media (max-width: 1023px) {
+      .hide-0-to-1024 {
+        display: none;
+      }
+    }
+  
+    @media (min-width: 1024px) {
+      .hide-1024-up {
+        display: none;
+      }
+    }
+  
+    /*END Form Wizard*/
+  
+    ul.stats-overview li {
+      width: 15%;
+    }
+  
+    .disabled, .disabled:hover, .disabled:focus {
+      cursor: pointer !important;
+    }
+
+ 
+    .x_content{
+        padding-left: 25%;
+    }
+    .amount-details, .card1{
+      border-radius: 15px;
+      display: inline-block;
+      height: 100px;
+      margin: 1rem;
+      width: 90%;
+    }
 </style>
-<div class="dash-container">
-	<div class="card mess-details">
-		<h3>Mess details</h3>
-		<p>{{user.block}}{{user.mess}}</p>
-	</div>
-
-</div>
 
 
+    <div class="x_panel" style="margin-top: 1vh; border-style: none">
+        <center><h2 class="section-header">Dashboard</h2></center>
+       <center> <div style="display: inline-flex">
+          <h4><b>Mess Timeline</b></h4>
+        </div></center>
+        <hr>
+        <div class="x_content"><br/>
+                <div class="row bs-wizard" style="border-bottom:0; margin: 0 auto; margin-top: 2vh">
+                    <div class="{% if meal_type >= 0 %} col-xs-2 col-md-2 bs-wizard-step complete {% else%} col-xs-2 col-md-2 bs-wizard-step disabled{% endif %}">
+                    <div class="text-center bs-wizard-stepnum">Breakfast</div>
+                    <div class="progress">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <a href="#" class="bs-wizard-dot"></a>
+                    <div class="bs-wizard-info text-center">Display Menu</div>
+                    </div>
+    
+                    <div class="{% if meal_type >= 1 %} col-xs-2 col-md-2 bs-wizard-step complete {% else%} col-xs-2 col-md-2 bs-wizard-step disabled{% endif %}">
+                    <div class="text-center bs-wizard-stepnum">Lunch</div>
+                    <div class="progress">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <a href="#" class="bs-wizard-dot"></a>
+                    <div class="bs-wizard-info text-center">Menu</div>
+                    </div>
+    
+                    <div class="{% if meal_type >= 2 %} col-xs-2 col-md-2 bs-wizard-step complete {% else%} col-xs-2 col-md-2 bs-wizard-step disabled{% endif %}">
+                    <div class="text-center bs-wizard-stepnum">Snacks</div>
+                    <div class="progress">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <a href="#" class="bs-wizard-dot"></a>
+                    <div class="bs-wizard-info text-center">Menu here</div>
+                    </div>
+                    <div class="{% if meal_type >= 3 %} col-xs-2 col-md-2 bs-wizard-step complete {% else%} col-xs-2 col-md-2 bs-wizard-step disabled{% endif %}">
+                    <div class="text-center bs-wizard-stepnum">Dinner</div>
+                    <div class="progress">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <a href="#" class="bs-wizard-dot"></a>
+                    <div class="bs-wizard-info text-center">Menu here</div>
+                    </div>
+
+                   
+                </div>
+        </div>
+        <div>
+                <center><div class="amount-details">
+                    <div class="col-xs-8 col-md-4" >
+                        <div class="card1 bg-light text-dark">
+                            <div class="card-body">
+                                <center><strong>Remaining Amount :</strong><br/><br/>
+                                {{ refund }}</center>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="col-xs-2 col-md-4" >
+                            <div class="card1 bg-light text-dark">
+                                <div class="card-body">
+                                    <center><strong>Amount Spent :</strong><br/><br/>
+                                    {{ amount_remaining }}</center>
+                                </div>
+                            </div>
+                    </div>
+                </div></center>
+        </div>
+    </div>
+    <br/>
+    <br/>
 {% endblock %}
