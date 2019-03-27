@@ -18,16 +18,9 @@
       width: 90%;
     }
 
-    
-  
-    .card-1 {
-      box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-      transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-  
-    }
-  
-    .card-1:hover {
-      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+ 
+    .card1:hover {
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.22);
   
     }
   
@@ -168,77 +161,171 @@
       margin: 1rem;
       width: 90%;
     }
+
+    .modal {
+      text-align: center;
+    }
+
+    @media screen and (min-width: 768px) { 
+      .modal:before {
+        display: inline-block;
+        vertical-align: middle;
+        content: " ";
+        height: 100%;
+      }
+    }
+
+    .modal-dialog {
+      display: inline-block;
+      text-align: left;
+      vertical-align: middle;
+      font-weight: 100;
+    }
+    .modal-title{
+      font-size: 20px;
+      color: #111;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+
+    .section-header{
+      font-size: 32px;
+      color: #111;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+    .section-header2{
+      font-size: 20px;
+      color: #110;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+
+    .card-body {
+      text-align: center;
+      padding-bottom: 40px;
+      color: #29413c;
+    }
+    .section-description {
+      text-align: center;
+      padding-bottom: 40px;
+      color: #999;
+    }
+     button[type="submit"] {
+      background: #868b91;
+      border: 0;
+      padding: 10px 24px;
+      color: #fff;
+      transition: 0.4s;
+    }
+
+    button[type="submit"]:hover {
+      background: #51d8ad;
+    }
 </style>
 
 
-    <div class="x_panel" style="margin-top: 1vh; border-style: none">
-        <center><h2 class="section-header">Dashboard</h2></center>
-       <center> <div style="display: inline-flex">
-          <h4><b>Mess Timeline</b></h4>
-        </div></center>
-        <hr>
-        <div class="x_content"><br/>
-                <div class="row bs-wizard" style="border-bottom:0; margin: 0 auto; margin-top: 2vh">
-                    <div class="{% if meal_type >= 0 %} col-xs-2 col-md-2 bs-wizard-step complete {% else%} col-xs-2 col-md-2 bs-wizard-step disabled{% endif %}">
-                    <div class="text-center bs-wizard-stepnum">Breakfast</div>
-                    <div class="progress">
-                        <div class="progress-bar"></div>
-                    </div>
-                    <a href="#" class="bs-wizard-dot"></a>
-                    <div class="bs-wizard-info text-center">Display Menu</div>
-                    </div>
-    
-                    <div class="{% if meal_type >= 1 %} col-xs-2 col-md-2 bs-wizard-step complete {% else%} col-xs-2 col-md-2 bs-wizard-step disabled{% endif %}">
-                    <div class="text-center bs-wizard-stepnum">Lunch</div>
-                    <div class="progress">
-                        <div class="progress-bar"></div>
-                    </div>
-                    <a href="#" class="bs-wizard-dot"></a>
-                    <div class="bs-wizard-info text-center">Menu</div>
-                    </div>
-    
-                    <div class="{% if meal_type >= 2 %} col-xs-2 col-md-2 bs-wizard-step complete {% else%} col-xs-2 col-md-2 bs-wizard-step disabled{% endif %}">
-                    <div class="text-center bs-wizard-stepnum">Snacks</div>
-                    <div class="progress">
-                        <div class="progress-bar"></div>
-                    </div>
-                    <a href="#" class="bs-wizard-dot"></a>
-                    <div class="bs-wizard-info text-center">Menu here</div>
-                    </div>
-                    <div class="{% if meal_type >= 3 %} col-xs-2 col-md-2 bs-wizard-step complete {% else%} col-xs-2 col-md-2 bs-wizard-step disabled{% endif %}">
-                    <div class="text-center bs-wizard-stepnum">Dinner</div>
-                    <div class="progress">
-                        <div class="progress-bar"></div>
-                    </div>
-                    <a href="#" class="bs-wizard-dot"></a>
-                    <div class="bs-wizard-info text-center">Menu here</div>
-                    </div>
-
-                   
+<div class="x_panel" style="margin-top: 1vh; border-style: none">
+    <center><h2 class="section-header">Dashboard</h2></center><br/>
+   <center> <div style="display: inline-flex">
+      <h4 class="section-header2"><b>Mess Timeline</b></h4>
+    </div></center>
+    <hr>
+    <br/>
+    <p class="section-description">Click the dots to display the respective menu.</p>
+    <div class="x_content">
+            <div class="row bs-wizard" style="border-bottom:0; margin: 0 auto; margin-top: 2vh">
+                <div class="{% if meal_type >= 0 %} col-xs-2 col-md-2 bs-wizard-step complete {% else%} col-xs-2 col-md-2 bs-wizard-step disabled{% endif %}">
+                <div class="text-center bs-wizard-stepnum"><strong>Breakfast</strong></div>
+                <div class="progress">
+                    <div class="progress-bar"></div>
                 </div>
-        </div>
-        <div>
-                <center><div class="amount-details">
-                    <div class="col-xs-8 col-md-4" >
-                        <div class="card1 bg-light text-dark">
-                            <div class="card-body">
-                                <center><strong>Remaining Amount :</strong><br/><br/>
-                                {{ refund }}</center>
-                            </div>
+                <a class="bs-wizard-dot" data-toggle="modal" data-target="#myModal"></a>
+                </div>
+
+                <div class="{% if meal_type >= 1 %} col-xs-2 col-md-2 bs-wizard-step complete {% else%} col-xs-2 col-md-2 bs-wizard-step disabled{% endif %}">
+                <div class="text-center bs-wizard-stepnum"><strong>Lunch</strong></div>
+                <div class="progress">
+                    <div class="progress-bar"></div>
+                </div>
+                <a class="bs-wizard-dot" data-toggle="modal" data-target="#myModal"></a>
+                </div>
+
+                <div class="{% if meal_type >= 2 %} col-xs-2 col-md-2 bs-wizard-step complete {% else%} col-xs-2 col-md-2 bs-wizard-step disabled{% endif %}">
+                <div class="text-center bs-wizard-stepnum"><strong>Snacks</strong></div>
+                <div class="progress">
+                    <div class="progress-bar"></div>
+                </div>
+                <a class="bs-wizard-dot" data-toggle="modal" data-target="#myModal"></a>
+                </div>
+                <div class="{% if meal_type >= 3 %} col-xs-2 col-md-2 bs-wizard-step complete {% else%} col-xs-2 col-md-2 bs-wizard-step disabled{% endif %}">
+                <div class="text-center bs-wizard-stepnum"><strong>Dinner</strong></div>
+                <div class="progress">
+                    <div class="progress-bar"></div>
+                </div>
+                <a class="bs-wizard-dot" data-toggle="modal" data-target="#myModal"></a>
+                </div>
+
+               
+            </div>
+    </div>
+    <div>
+            <center><div class="amount-details">
+                <div class="col-xs-8 col-md-4" >
+                    <div class="card1 bg-light text-dark">
+                        <div class="card-body">
+                            <center><strong>Remaining Amount :</strong><br/><br/>
+                            {{ refund }}</center>
                         </div>
                     </div>
-                   
-                    <div class="col-xs-2 col-md-4" >
-                            <div class="card1 bg-light text-dark">
-                                <div class="card-body">
-                                    <center><strong>Amount Spent :</strong><br/><br/>
-                                    {{ amount_remaining }}</center>
-                                </div>
+                </div>
+               
+                <div class="col-xs-2 col-md-4" >
+                        <div class="card1 bg-light text-dark">
+                            <div class="card-body">
+                                <center><strong>Amount Spent :</strong><br/><br/>
+                                {{ amount_remaining }}</center>
                             </div>
-                    </div>
-                </div></center>
-        </div>
+                        </div>
+                </div>
+            </div></center>
     </div>
+    <br/><br/>
+    <center>
+            <a href="scan_result"><button type="submit" class="btn btn-danger">Scan QR</button></a>
+    </center>
+</div>
+
+    <!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Menu - </h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        The menu esfsdfrgesfd
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
     <br/>
     <br/>
 {% endblock %}
