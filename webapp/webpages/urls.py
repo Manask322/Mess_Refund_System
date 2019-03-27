@@ -5,4 +5,5 @@ from django.urls import path
 urlpatterns = [
     path('', views.HomePageView.as_view(), name="homepage"),
     path('terms', views.TermsView.as_view(), name="terms"),
+    path('docs', views.DocView.as_view(), name="documentation")
 ]

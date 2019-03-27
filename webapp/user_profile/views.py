@@ -81,3 +81,4 @@ def profile_view(request):
     else:
         user = current_user.Messmanager
     return render(request,"user_profile/result.html",{'user':user, 'current_user':current_user})
+

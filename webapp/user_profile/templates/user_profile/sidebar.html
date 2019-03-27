@@ -1,11 +1,104 @@
-<div class="card">
-    <div class="card-body">
-        <h2 class="h6">Navigation</h2>
-        <hr>
-        <ul class="list-group">
-            <li class="list-group-item"><a href="{% url 'profile' %}">Profile Details</a></li>
-            <li class="list-group-item"><a href="{% url 'status' %}">Account Status</a></li>
-        </ul>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+	body {
 
+	  transition: background-color .5s;
+	}
+
+	.sidenav {
+	  margin-top: 68px;
+	  height: 100%;
+	  width: 0;
+	  position: fixed;
+	  z-index: 1;
+	  top: 0;
+	  left: 0;
+	  background-color: #cb8555;
+	  overflow-x: hidden;
+	  transition: 0.5s;
+	  padding-top: 10%;
+	  }
+
+	.sidenav a {
+	  padding: 8px 8px 8px 32px;
+	  text-decoration: none;
+	  font-size: 20px;
+	  color: rgba(255,255,255,.75);
+	  display: block;
+	  transition: 0.3s;
+	  font-family: 'Alegreya Sans SC', sans-serif;
+	}
+
+	.sidenav a:hover {
+	  color: white;
+	  background-color: #dea075;
+	}
+
+	.sidenav .closebtn {
+	  position: absolute;
+	  top: 0;
+	  right: 25px;
+	  font-size: 20px;
+	  margin-left: 50px;
+	  padding-right: 7%;
+	}
+
+	#main {
+	  transition: margin-left .5s;
+	  padding: 16px;
+	}
+
+	@media screen and (max-height: 450px) {
+	  .sidenav {padding-top: 15px;}
+	  .sidenav a {font-size: 18px;}
+	}
+	/*.img-bg{
+
+	  opacity: 0.2;
+	  margin-bottom: 0px;
+	  background: #000 url('http://homelivingct.com/wp-content/uploads/2018/05/cafeteria-tables-portable-used-benches-metal-stacking-training-lab-activity-bench-canteen-library-manufacturers-resin-out-galvin-utility-seminar-wood-commercial.jpg') top center no-repeat;
+	  width: 100%;
+	  height:100%;
+	  background-size: cover;
+	  overflow: hidden;
+	  position: absolute;
+	  top: 0;
+	  left:0;
+	  z-index: 1;
+	}
+	.sidenav, .cont{
+		z-index: 2;
+	}*/
+</style>
+    <div id="mySidenav" class="sidenav img-cont" >
+    	<div class="img-bg"></div>
+    	<div class="cont">
+    	<br/>
+    	<br/>
+        <ul class="list-group">
+        	<center>
+            <li class="w3-bar-item w3-button"><a href="{% url 'profile' %}">Profile Details</a></li>
+            <li class="w3-bar-item w3-button"><a href="{% url 'profile' %}">Scan QR</a></li>
+            <li class="w3-bar-item w3-button"><a href="{% url 'dashboard' %}">Dashboard</a></li>
+            <li class="w3-bar-item w3-button"><a href="{% url 'status' %}">Account Status</a></li>
+        	</center>
+        </ul>
     </div>
-</div>
+    </div>
+
+<script>
+function openNav() {
+	var flag = document.getElementById("mySidenav").style.width;
+	if(flag!='450px'){
+	  document.getElementById("mySidenav").style.width = "450px";
+	  //document.getElementById("main").style.marginLeft = "25%";
+	  document.body.style.backgroundColor = "rgba(0,0,0,.5);";
+	}
+	//	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	else{
+	  document.getElementById("mySidenav").style.width = "0";
+	  //document.getElementById("main").style.marginLeft= "0";
+	  document.body.style.backgroundColor = "white";
+	}
+}
+</script>

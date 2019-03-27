@@ -6,6 +6,25 @@
 {% block head_title %}{% trans "User Profile" %}{% endblock %}
 
 {% block content %}
-    {{ user }}
-    {{ current_user }}
+<br/><br/><br/>
+<style type="text/css">
+	.dash-container{
+		background-color: #efebe4;
+	}
+	.card{
+
+	}
+	.dash-container .mess-details{
+
+	}
+</style>
+<div class="dash-container">
+	<div class="card mess-details">
+		<h3>Mess details</h3>
+		<p>{{user.block}}{{user.mess}}</p>
+	</div>
+
+</div>
+
+
 {% endblock %}

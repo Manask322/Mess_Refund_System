@@ -8,3 +8,6 @@ class HomePageView(TemplateView):
 
 class TermsView(TemplateView):
     template_name = "webpages/terms.html"
+
+class DocView(TemplateView):
+    template_name  = "webpages/docs.html"   
