@@ -12,12 +12,16 @@ from django.contrib.auth.models import User
 
 def HomePageView(request):
     template_name = "webpages/homepage.html"
-    current_user = User.objects.get(id = request.user.id)
-    if current_user.Student.is_scanned :
-        current_user.Student.is_scanned = False
-        current_user.Student.save()
+    if request.user.is_authenticated:
+        current_user = User.objects.get(id = request.user.id)
+        if current_user.Student.is_scanned :
+            current_user.Student.is_scanned = False
+            current_user.Student.save()
     return render(request,template_name)
 
 def TermsView(request):
     template_name = "webpages/terms.html"
     return render(request,template_name)
+
+def Docs(request):
+    return render(request,"webpages/docs.html")

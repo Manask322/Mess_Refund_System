@@ -6,6 +6,10 @@
 {% block head_title %}{% trans "User Profile" %}{% endblock %}
 
 {% block content %}
+<br>
+<br>
+<br>
+<br>
 <style>
         body {font-family: Arial, Helvetica, sans-serif;}
 
@@ -64,7 +68,7 @@
         
         .modal-header {
           padding: 2px 16px;
-          background-color: #5cb85c;
+          background-color: #fd7e14;
           color: white;
         }
         
@@ -72,22 +76,60 @@
         
         .modal-footer {
           padding: 2px 16px;
-          background-color: #5cb85c;
+          background-color: #fd7e14;
           color: white;
         }
+        .section-header2{
+      font-size: 20px;
+      color: #110;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
         </style>
-        <button id="myBtn">Open Modal</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <center>
+            <button id="myBtn" class="btn btn-lg btn-warning">View Mess Card</button>
+        </center>
         <div id="myModal" class="modal">
           <div class="modal-content">
-            <div class="modal-header">
-              <span class="close">&times;</span>
-              <h2>E MESS CARD</h2>
+            <div class="modal-header section-header2">
+              <center><h2>E MESS CARD</h2></center>
+              <span class="close" >&times;</span>
             </div>
             <div class="modal-body">
-              <p>This div will contain user details</p>
+                    <div class="card">
+                            <!-- <img class="card-img-top" > -->
+                            
+                            <div  style="float:left;">
+                                            <center><img src="{{request.user.user_profile.image.url_60x60}}" style="height:200px;width:200px;" 
+                                            alt="{{request.user.fullname}}" class="card-img-top"></center>
+                            
+                            </div>
+                            <div  style="float:left;">
+                                    <div class="card-body">
+                                            <center><h4 class="card-title"> <strong>Name : </strong> {{current_user.first_name}}{{current_user.last_name}}</h4>
+                                            <br>
+                                            <h4 class="card-title"> <strong>Block : </strong> {{user.block}}</h4>
+                                            <br>
+                                            <h4 class="card-title"> <strong>Student ID :</strong> {{user.student_id}}</h4>
+                                            <br>
+                                            <h4 class="card-title"><strong>Mess :</strong> {{user.mess}}</h4>
+                                          </center>
+                                          </div>
+                            </div>
+                            
+                          </div>
+
             </div>
             <div class="modal-footer">
-              <h3>Write Something here</h3>
+              <h3></h3>
             </div>
           </div>
         
@@ -97,7 +139,10 @@
         var modal = document.getElementById('myModal');
         var btn = document.getElementById("myBtn");
         var span = document.getElementsByClassName("close")[0];
+        modal.style.display = "block";
+        btn.onclick = function(){
           modal.style.display = "block";
+        }
         span.onclick = function() {
           modal.style.display = "none";
         }
@@ -107,8 +152,13 @@
           }
         }
         </script>
-<h2 class="h6">Student Profile</h2>
-    {{ user }}
-    {{ current_user }}
-    {{qr_val}}
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>  
 {% endblock %}
