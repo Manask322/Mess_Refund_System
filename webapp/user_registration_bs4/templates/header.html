@@ -1,18 +1,55 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-white" id="mainNav">
-    <div class="container">
-        <a class="navbar-brand " href="/">Web Application</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                aria-label="Toggle navigation">
-            Menu
-            <i class="fa fa-bars"></i>
+<link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
+
+<style type="text/css">
+    .user-img{
+        color:rgba(255,255,255,.5);
+        font-size: 20px;
+        border:1px solid transparent;
+        font-family: 'Alegreya Sans SC', sans-serif;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        margin-bottom: 0px;
+    }
+    .user-img:hover{
+        text-decoration: none;
+        color: white;
+    }
+    .navbar{
+        background-color: #c8641f;
+        opacity: 0.9;
+    }
+    .navbar,  .collapse, .navbar-nav, .nav-item{
+        font-size:20px;
+        font-family: 'Alegreya Sans SC', sans-serif;
+        
+    }
+    .navbar, .collapse, .navbar-nav, .nav-item:hover{
+        color: white;
+    }
+    .to-open{
+        padding: 10px 10px 12px 12px;
+    }
+    .to-open:hover{
+        background-color: #dea075;
+    }
+</style>
+<nav class="navbar navbar-expand-lg navbar-toggleable-md navbar-dark fixed-top scrolling-navbar" >
+    {% if request.user.is_authenticated %}
+        <p class="navbar-brand to-open" style="cursor:pointer; color:#8E3E08; padding-left: 10px; padding-bottom: 0px; margin-bottom: 0px; padding-top: 0px; size:20px;" onclick="openNav()">&#9776;</p>
+    {% endif %}
+    <div class="container header">
+
+        <a class="navbar-brand " href="/" style="font-family: 'Alex Brush', sans-serif; font-size: 30px;">Rimborso</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapseEx12" aria-controls="collapseEx2" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
+        <div class="collapse navbar-collapse" id="collapseEx12" >
             <ul class="navbar-nav ml-auto">
                 {% if request.user.is_authenticated %}
-                <li class="nav-item">
-                    <a href="/accounts/profile/">
-                        <img src="{{request.user.user_profile.image.url_60x60}}" style="height:40px;"
+                <li class="nav-item" style="border-right: 0.5px solid #8E3E08; padding-right: 8px;">
+                    <a class="user-img" href="/accounts/profile/">
+                        <img src="{{request.user.user_profile.image.url_60x60}}" style="height:45px;"
                              alt="{{request.user.fullname}}" class="avatar rounded-circle">
                         <span class="header-username">{{request.user.get_full_name}}</span>
                     </a>
@@ -21,18 +58,19 @@
                 <li class="nav-item">
                     <a class="nav-link " href="/accounts/logout/">Logout</a>
                 </li>
-                <li>
-                    <a class="nav-link " href="/scan_result">manas</a>
-                </li>
                 {% else %}
 
                 <li class="nav-item">
-                    <a class="nav-link " href="/accounts/login/">Login</a>
+                    <a class="nav-link" href="/accounts/login/">Login</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="/accounts/signup/">Signup</a>
+                    <a class="nav-link" href="/accounts/signup/">Signup</a>
+                </li>
+                <li class="nav-item" >
+                    <a class="nav-link" href="{{ activate_url }}">Activate URL</a>
                 </li>
                 {% endif %}
+
             </ul>
         </div>
     </div>

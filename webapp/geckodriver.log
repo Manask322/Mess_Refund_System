@@ -1,0 +1,619 @@
+1554303248671	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.A7QzrHysPJCT"
+1554303250272	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554303250273	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554303250273	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1554303256918	Marionette	INFO	Listening on port 36193
+1554303257036	Marionette	WARN	TLS certificate errors will be ignored for this session
+1554303257467	Marionette	INFO	Stopped listening on port 36193
+JavaScript error: resource://activity-stream/lib/ActivityStreamPrefs.jsm, line 23: NS_ERROR_ILLEGAL_VALUE: Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIPrefBranch.removeObserver]
+JavaScript error: , line 0: AbortError: A request was aborted, for example through a call to IDBTransaction.abort.
+JavaScript error: , line 0: AbortError: A request was aborted, for example through a call to IDBTransaction.abort.
+console.error: PushService: 
+  clearOriginData: Error clearing origin data:
+  UnknownError
+console.error: PushService: 
+  stateChangeProcessEnqueue: Error transitioning state
+  UnknownError
+
+###!!! [Parent][DispatchAsyncMessage] Error: PBackgroundIDBFactory::Msg_PBackgroundIDBFactoryRequestConstructor Value error: message was deserialized, but contained an illegal value
+
+
+###!!! [Parent][DispatchAsyncMessage] Error: PBackgroundIDBFactory::Msg_PBackgroundIDBFactoryRequestConstructor Value error: message was deserialized, but contained an illegal value
+
+1554303401048	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.YYXoCFjvbthB"
+1554303401384	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554303401384	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554303401384	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1554303407214	Marionette	INFO	Listening on port 40777
+1554303407269	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+1554303424570	Marionette	INFO	Stopped listening on port 40777
+[Parent 6562, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1554304005243	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.CtGN12H8IIzA"
+1554304005844	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554304005844	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554304005844	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1554304009892	Marionette	INFO	Listening on port 44773
+1554304009966	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+1554304030607	Marionette	INFO	Stopped listening on port 44773
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+[Parent 7311, Gecko_IOThread] WARNING: pipe error (64): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+JavaScript error: jar:file:///usr/lib/firefox/omni.ja!/components/nsUrlClassifierListManager.js, line 597: TypeError: this.tablesData[table] is undefined
+1554304571068	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.KKBFqs2bc94k"
+1554304571411	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554304571411	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554304571411	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1554304575571	Marionette	INFO	Listening on port 46129
+1554304575586	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+1554304590086	Marionette	INFO	Stopped listening on port 46129
+[Parent 8353, Gecko_IOThread] WARNING: pipe error (71): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 8353, Gecko_IOThread] WARNING: pipe error (105): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 834: Error: Connection is not open.
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 834: Error: Connection is not open.
+1554305072060	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.f7TvQ0wtQDnZ"
+1554305072871	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554305072871	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554305072871	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1554305077734	Marionette	INFO	Listening on port 46495
+1554305077819	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+1554305092318	Marionette	INFO	Stopped listening on port 46495
+[Parent 8924, Gecko_IOThread] WARNING: pipe error (79): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 8924, Gecko_IOThread] WARNING: pipe error (63): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 834: Error: Connection is not open.
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 834: Error: Connection is not open.
+1554305164449	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.DO5xT5mXFBlB"
+1554305164794	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554305164794	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554305164794	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1554305169171	Marionette	INFO	Listening on port 40389
+1554305169271	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+1554305186166	Marionette	INFO	Stopped listening on port 40389
+[Parent 9325, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 9325, Gecko_IOThread] WARNING: pipe error (68): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1554305827447	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.zDozR0TMgNAS"
+1554305827783	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554305827783	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554305827783	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1554305832199	Marionette	INFO	Listening on port 33139
+1554305832264	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+1554305851533	Marionette	INFO	Stopped listening on port 33139
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+WARNING: At least one completion condition is taking too long to complete. Conditions: [{"name":"Transaction (0)","state":"(none)","filename":"resource://gre/modules/Sqlite.jsm","lineNumber":656,"stack":["resource://gre/modules/Sqlite.jsm:executeTransaction:656","resource://gre/modules/Sqlite.jsm:executeTransaction:1433","resource://gre/modules/FormHistory.jsm:_establishConn:734"]}] Barrier: formhistory.sqlite#0: waiting for clients
+WARNING: At least one completion condition is taking too long to complete. Conditions: [{"name":"Closing FormHistory database.","state":"(none)","filename":"resource://gre/modules/FormHistory.jsm","lineNumber":672,"stack":["resource://gre/modules/FormHistory.jsm:_establishConn:672"]}] Barrier: Sqlite.jsm: wait until all clients have completed their task
+WARNING: At least one completion condition is taking too long to complete. Conditions: [{"name":"Places Connection shutdown","state":{"progress":{}},"filename":"/build/firefox-QFhmDU/firefox-66.0.2+build1/toolkit/components/places/Database.cpp","lineNumber":503,"stack":["jar:file:///usr/lib/firefox/omni.ja!/components/nsAsyncShutdown.js:addBlocker:152","resource://gre/modules/PlacesUtils.jsm:null:1800","resource://gre/modules/XPCOMUtils.jsm:get:129","resource://gre/modules/PlacesUtils.jsm:getFolderContents:1168","jar:file:///usr/lib/firefox/browser/omni.ja!/components/nsBrowserGlue.js:getToolbarFolderCount:2188","jar:file:///usr/lib/firefox/browser/omni.ja!/components/nsBrowserGlue.js:_maybeToggleBookmarkToolbarVisibility:2194","jar:file:///usr/lib/firefox/browser/omni.ja!/components/nsBrowserGlue.js:BG__migrateUI:2218","jar:file:///usr/lib/firefox/browser/omni.ja!/components/nsBrowserGlue.js:BG__beforeUIStartup:1028","jar:file:///usr/lib/firefox/browser/omni.ja!/components/nsBrowserGlue.js:BG_observe:716"]},{"name":"Sqlite.jsm shutdown blocker","state":{"description":"Waiting for the barrier to be lifted","state":[{"name":"Closing FormHistory database.","state":"(none)","filename":"resource://gre/modules/FormHistory.jsm","lineNumber":672,"stack":["resource://gre/modules/FormHistory.jsm:_establishConn:672"]}]},"filename":"resource://gre/modules/Sqlite.jsm","lineNumber":149,"stack":["resource://gre/modules/Sqlite.jsm:null:149","resource://gre/modules/XPCOMUtils.jsm:get:129","resource://gre/modules/Sqlite.jsm:ConnectionData:257","resource://gre/modules/Sqlite.jsm:OpenedConnection:1183","resource://gre/modules/Sqlite.jsm:cloneStorageConnection/</<:1073"]}] Barrier: profile-before-change
+JavaScript error: jar:file:///usr/lib/firefox/browser/omni.ja!/components/nsBrowserGlue.js, line 1411: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIAppShellService.hiddenDOMWindow]
+JavaScript error: resource://gre/modules/JSONFile.jsm, line 159: Error: Data is not ready.
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 834: Error: Connection is not open.
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 834: Error: Connection is not open.
+1554308175693	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.BD7meBCgi4hp"
+1554308180263	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554308180264	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554308180264	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1554308186800	Marionette	INFO	Listening on port 41285
+1554308186923	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+1554308201822	Marionette	INFO	Stopped listening on port 41285
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+[Parent 11512, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 11512, Gecko_IOThread] WARNING: pipe error (92): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1554308316516	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.oVRzOhQbhJMf"
+1554308316863	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554308316863	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554308316863	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1554308320838	Marionette	INFO	Listening on port 45031
+1554308320943	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+1554308337541	Marionette	INFO	Stopped listening on port 45031
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+JavaScript error: jar:file:///usr/lib/firefox/omni.ja!/components/nsUrlClassifierListManager.js, line 597: TypeError: this.tablesData[table] is undefined
+[Parent 11953, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 11953, Gecko_IOThread] WARNING: pipe error (81): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1554308409742	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.DhLoZo5FYBnp"
+1554308410083	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554308410083	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554308410083	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1554308414050	Marionette	INFO	Listening on port 34347
+1554308414062	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+1554308428359	Marionette	INFO	Stopped listening on port 34347
+[Parent 12344, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 834: Error: Connection is not open.
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 834: Error: Connection is not open.
+1554308513728	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.LP3pgnbD3kY0"
+1554308514067	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554308514067	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554308514067	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1554308518462	Marionette	INFO	Listening on port 42867
+1554308518561	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+1554308547194	Marionette	INFO	Stopped listening on port 42867
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+JavaScript error: jar:file:///usr/lib/firefox/omni.ja!/components/nsUrlClassifierListManager.js, line 597: TypeError: this.tablesData[table] is undefined
+WARNING: At least one completion condition is taking too long to complete. Conditions: [{"name":"Closing FormHistory database.","state":"(none)","filename":"resource://gre/modules/FormHistory.jsm","lineNumber":672,"stack":["resource://gre/modules/FormHistory.jsm:_establishConn:672"]}] Barrier: Sqlite.jsm: wait until all clients have completed their task
+WARNING: At least one completion condition is taking too long to complete. Conditions: [{"name":"Places Connection shutdown","state":{"progress":{}},"filename":"/build/firefox-QFhmDU/firefox-66.0.2+build1/toolkit/components/places/Database.cpp","lineNumber":503,"stack":["jar:file:///usr/lib/firefox/omni.ja!/components/nsAsyncShutdown.js:addBlocker:152","resource://gre/modules/PlacesUtils.jsm:null:1800","resource://gre/modules/XPCOMUtils.jsm:get:129","resource://gre/modules/PlacesUtils.jsm:getFolderContents:1168","jar:file:///usr/lib/firefox/browser/omni.ja!/components/nsBrowserGlue.js:getToolbarFolderCount:2188","jar:file:///usr/lib/firefox/browser/omni.ja!/components/nsBrowserGlue.js:_maybeToggleBookmarkToolbarVisibility:2194","jar:file:///usr/lib/firefox/browser/omni.ja!/components/nsBrowserGlue.js:BG__migrateUI:2218","jar:file:///usr/lib/firefox/browser/omni.ja!/components/nsBrowserGlue.js:BG__beforeUIStartup:1028","jar:file:///usr/lib/firefox/browser/omni.ja!/components/nsBrowserGlue.js:BG_observe:716"]},{"name":"Sqlite.jsm shutdown blocker","state":{"description":"Waiting for the barrier to be lifted","state":[{"name":"Closing FormHistory database.","state":"(none)","filename":"resource://gre/modules/FormHistory.jsm","lineNumber":672,"stack":["resource://gre/modules/FormHistory.jsm:_establishConn:672"]}]},"filename":"resource://gre/modules/Sqlite.jsm","lineNumber":149,"stack":["resource://gre/modules/Sqlite.jsm:null:149","resource://gre/modules/XPCOMUtils.jsm:get:129","resource://gre/modules/Sqlite.jsm:ConnectionData:257","resource://gre/modules/Sqlite.jsm:OpenedConnection:1183","resource://gre/modules/Sqlite.jsm:cloneStorageConnection/</<:1073"]}] Barrier: profile-before-change
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1554309991105	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.ebtEQTahfe8D"
+1554309993803	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554309993804	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554309993804	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1554310000881	Marionette	INFO	Listening on port 34767
+1554310001028	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://bootstrapmade.com/demo/themes/Regna/js/main.js, line 21: ReferenceError: WOW is not defined
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+1554310027638	Marionette	INFO	Stopped listening on port 34767
+1554311378866	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.MFXqMgw4fCmD"
+1554311379208	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554311379208	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554311379208	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1554311383689	Marionette	INFO	Listening on port 34513
+1554311383783	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+1554311401780	Marionette	INFO	Stopped listening on port 34513
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+[Parent 17377, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1554311408978	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.QpjZFXEMPDgq"
+1554311409323	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554311409324	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554311409324	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1554311414718	Marionette	INFO	Listening on port 33079
+1554311414800	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+1554311427651	Marionette	INFO	Stopped listening on port 33079
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+[Parent 17681, Gecko_IOThread] WARNING: pipe error (77): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 17681, Gecko_IOThread] WARNING: pipe error (101): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1554311774694	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.esK3YtRkyF75"
+1554311775136	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554311775137	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554311775137	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1554311778647	Marionette	INFO	Listening on port 37603
+1554311778723	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+1554311792361	Marionette	INFO	Stopped listening on port 37603
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+[Parent 18265, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1554311799758	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.RbCr4FbEQOM3"
+1554311800119	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554311800120	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554311800120	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1554311803987	Marionette	INFO	Listening on port 42481
+1554311804091	Marionette	WARN	TLS certificate errors will be ignored for this session
+1554311805159	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.4Zwod9M3P7Vf"
+1554311805529	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554311805529	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554311805529	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1554311809280	Marionette	INFO	Listening on port 37915
+1554311809373	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+1554311819583	Marionette	INFO	Stopped listening on port 37915
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+[Parent 18814, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1554311827301	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.PjIXB6bZg3e0"
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+1554311827654	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554311827654	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554311827655	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1554311831727	Marionette	INFO	Listening on port 41985
+1554311831817	Marionette	WARN	TLS certificate errors will be ignored for this session
+1554311831868	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.81GKjr78R9iJ"
+1554311832210	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554311832210	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554311832210	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1554311836664	Marionette	INFO	Listening on port 34319
+1554311836723	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://bootstrapmade.com/demo/themes/Regna/js/main.js, line 21: ReferenceError: WOW is not defined
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+1554311862853	Marionette	INFO	Stopped listening on port 34319
+[Parent 19372, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+1554311949417	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.DW5eSU37c9Vr"
+1554311949917	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554311949917	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554311949918	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1554311954146	Marionette	INFO	Listening on port 42331
+1554311954235	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+1554311970569	Marionette	INFO	Stopped listening on port 42331
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+1554311978454	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.eLUBwiSjTTM7"
+1554311978794	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554311978795	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554311978795	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1554311982049	Marionette	INFO	Listening on port 45179
+1554311982105	Marionette	WARN	TLS certificate errors will be ignored for this session
+1554311982179	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.xCcIGvsokYz3"
+1554311982546	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554311982546	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554311982547	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1554311986486	Marionette	INFO	Listening on port 43713
+1554311986543	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+1554311995776	Marionette	INFO	Stopped listening on port 43713
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+[Parent 20342, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1554312002684	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.8XWoob2X4QoV"
+1554312003068	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554312003068	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554312003068	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1554312006661	Marionette	INFO	Listening on port 45965
+1554312006711	Marionette	WARN	TLS certificate errors will be ignored for this session
+1554312006783	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.3GrHDBqEIv0U"
+1554312007135	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554312007135	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554312007135	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1554312011326	Marionette	INFO	Listening on port 39265
+1554312011413	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 20654, Gecko_IOThread] WARNING: pipe error (95): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 20654, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1554312021048	Marionette	INFO	Stopped listening on port 45965
+1554312021560	Marionette	INFO	Stopped listening on port 39265
+[Parent 19108, Gecko_IOThread] WARNING: pipe error (95): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 19108, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1554312028400	Marionette	INFO	Stopped listening on port 41985
+1554312065781	Marionette	INFO	Stopped listening on port 45179
+[Parent 18562, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 18562, Gecko_IOThread] WARNING: pipe error (64): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1554312070798	Marionette	INFO	Stopped listening on port 42481
+1554312349564	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.BhUNJBMrGuOM"
+1554312349904	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554312349904	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554312349904	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1554312353646	Marionette	INFO	Listening on port 34843
+1554312353720	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+1554312369009	Marionette	INFO	Stopped listening on port 34843
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+[Parent 22250, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1554312377118	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.wEpkfrU6jqLE"
+1554312377496	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554312377497	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554312377497	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1554312381286	Marionette	INFO	Listening on port 35813
+1554312381378	Marionette	WARN	TLS certificate errors will be ignored for this session
+1554312381440	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.D8rcGMFDAB8f"
+1554312381791	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554312381792	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554312381792	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1554312385745	Marionette	INFO	Listening on port 43493
+1554312385756	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+1554312400025	Marionette	INFO	Stopped listening on port 43493
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+[Parent 22796, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 22796, Gecko_IOThread] WARNING: pipe error (95): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 22557, Gecko_IOThread] WARNING: pipe error (81): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 22557, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1554312404093	Marionette	INFO	Stopped listening on port 35813
+1554312407542	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.MGPTeAeHcaJN"
+1554312407892	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554312407893	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554312407893	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1554312411321	Marionette	INFO	Listening on port 38723
+1554312411396	Marionette	WARN	TLS certificate errors will be ignored for this session
+1554312411473	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.COYfax8Q1cwV"
+1554312411833	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554312411833	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554312411833	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1554312415675	Marionette	INFO	Listening on port 46295
+1554312415694	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+[Parent 23188, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 23188, Gecko_IOThread] WARNING: pipe error (64): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1554312435267	Marionette	INFO	Stopped listening on port 38723
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+1554312446905	Marionette	INFO	Stopped listening on port 46295
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+[Parent 23425, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1554312815294	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.raww2o7aYXrQ"
+1554312815635	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554312815635	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554312815636	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1554312820543	Marionette	INFO	Listening on port 39657
+1554312820613	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+1554312838634	Marionette	INFO	Stopped listening on port 39657
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+[Parent 24077, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1554312847368	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.xUNLF8ybiXVf"
+1554312847727	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554312847727	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554312847728	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1554312851650	Marionette	INFO	Listening on port 36463
+1554312851683	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+1554312868114	Marionette	INFO	Stopped listening on port 36463
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+[Parent 24363, Gecko_IOThread] WARNING: pipe error (86): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 24363, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1554312875442	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.H7E5YtZa9iw7"
+1554312875818	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554312875818	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554312875818	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1554312879547	Marionette	INFO	Listening on port 34005
+1554312879561	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+1554312897054	Marionette	INFO	Stopped listening on port 34005
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+[Parent 24681, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1554313382125	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.MgIgBNKsMFgN"
+1554313382479	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554313382480	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554313382480	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1554313386353	Marionette	INFO	Listening on port 42669
+1554313386439	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+1554313400757	Marionette	INFO	Stopped listening on port 42669
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+[Parent 25369, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1554313408698	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.D6iH2WFy1Hfa"
+1554313409064	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554313409064	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554313409064	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1554313412709	Marionette	INFO	Listening on port 43625
+1554313412812	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+1554313426264	Marionette	INFO	Stopped listening on port 43625
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+[Parent 25660, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 25660, Gecko_IOThread] WARNING: pipe error (92): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1554313434864	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.65cs2PUHbBpA"
+1554313435212	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554313435213	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554313435213	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1554313440000	Marionette	INFO	Listening on port 45869
+1554313440127	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 139: TypeError: $(...).progressbar is not a function
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+1554313467374	Marionette	INFO	Stopped listening on port 45869
+[Parent 25931, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1554313674292	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.l2o0leRetxGK"
+1554313674632	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554313674632	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554313674632	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1554313678848	Marionette	INFO	Listening on port 37479
+1554313678910	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+1554313694974	Marionette	INFO	Stopped listening on port 37479
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+[Parent 26438, Gecko_IOThread] WARNING: pipe error (79): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 26438, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1554313703836	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.YLRmQnBAyns6"
+1554313704179	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554313704179	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554313704179	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1554313708037	Marionette	INFO	Listening on port 46061
+1554313708095	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+1554313724160	Marionette	INFO	Stopped listening on port 46061
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+[Parent 26746, Gecko_IOThread] WARNING: pipe error (96): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 26746, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1554313731372	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.lBVrTtYOpddK"
+1554313731724	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554313731724	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554313731724	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1554313735755	Marionette	INFO	Listening on port 40977
+1554313735787	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+1554314050149	Marionette	INFO	Stopped listening on port 40977
+[Parent 27162, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1554314453743	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.yHWkEGWT42uw"
+1554314454095	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554314454096	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554314454096	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1554314458157	Marionette	INFO	Listening on port 35041
+1554314458261	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+1554314474027	Marionette	INFO	Stopped listening on port 35041
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+[Parent 28559, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1554314481299	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.0zwlvXyT9FER"
+1554314481658	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554314481658	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554314481658	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1554314485796	Marionette	INFO	Listening on port 35803
+1554314485819	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+1554314502237	Marionette	INFO	Stopped listening on port 35803
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+[Parent 28857, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 28857, Gecko_IOThread] WARNING: pipe error (64): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1554314509010	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Q3HU8JT1Eyqe"
+1554314509373	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554314509373	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554314509373	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1554314512806	Marionette	INFO	Listening on port 43975
+1554314512881	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js, line 2: TypeError: e.indexOf is not a function
+1554314523230	Marionette	INFO	Stopped listening on port 43975
+JavaScript error: https://cdn.iris.nitk.ac.in/new_layout/js/custom.js, line 86: TypeError: $(...).smartresize is not a function
+[Parent 29143, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357

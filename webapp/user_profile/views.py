@@ -14,6 +14,22 @@ from pyzbar.pyzbar import decode
 from PIL import Image
 import cv2
 
+mess_arr=["1st Block","2nd Block","3rd Block","4th Block",
+          "5th Block","7th Block","8th Block","Mega","GH","IH"]
+
+no_mess =10  
+no_days=7  
+no_meals=4  
+mess_details=[[],[],[],[],[],[],[],[["methi parota","chapti kurma","noodles","chapti and veg kofta"],
+["idli vada","chapathi bonda gravy","samosa","chapathi panner butter masala"],
+["poori bhajji","mix veg curry","pav bhaji","puliogare"],["upma","chapathi bindhi","veg puff","veg pulav"],
+["onion dosa","poori mutter","dahi vada","chapathi soya gravy"],["aloo parota","kashmiri pulav","dahi chat","chapathi hyderabadi gravy"],
+["MasalaDosa","puri chole","panipuri","veg biriyani"]],[],[],[]]  
+
+
+meal_t = ["Breakfasat","Lunch","Snacks","Dinner"]
+
+
 class UserProfileView(TemplateView, LoginRequiredMixin):
     template_name = "user_profile/profile.html"
 
@@ -67,12 +83,12 @@ class UserProfileView(TemplateView, LoginRequiredMixin):
 class UserStatusView(TemplateView, LoginRequiredMixin):
     template_name = "user_profile/status.html"
 
-meal_type = ["breakfast","lunch","snack","dinner","be hungry"]
 
 def dashboard(request):
     current_user = User.objects.get(id = request.user.id)
     remaining_amount = 22000.0 - current_user.Student.spend
     cur_time=dt.datetime.now().hour
+    cur_day=dt.datetime.today().weekday()  
     print("time is",cur_time )
     if cur_time < 10 and cur_time > 7:
         meal="breakfast"
@@ -83,12 +99,22 @@ def dashboard(request):
     elif cur_time >= 16 and cur_time < 18 :
         meal = "snacks"
         meal_type =2
-    elif cur_time > 18 and cur_time < 22:
+    elif cur_time > 18 and cur_time < 7:
         meal ="dinner"
         meal_type = 3
     else:
         meal="be hungry.."
-        meal_type = 4
+        meal_type = 3
+    if meal_type==0:
+        deduct = int(20)
+    elif meal_type==1:
+        deduct = int(40)
+    elif meal_type == 2:
+        deduct = int(10)
+    elif meal_type == 3:
+        deduct = int(30)
+    else:
+        deduct = 0
     if current_user.Student.is_scanned :
         current_user.Student.is_scanned = False
         current_user.Student.save()
@@ -97,9 +123,11 @@ def dashboard(request):
         user = current_user.Student
     else:
         user = current_user.Messmanager
-    if meal_type != (current_user.Student.present_meal+ 1)%4:
-        return render(request,"user_profile/dashboard.html",{'user':user, 'current_user':current_user,'meal':meal,"amount_remaining":remaining_amount,'meal_type':meal_type,'notice':"You have already Scanned Qr for the Present Meal"})
-    return render(request,"user_profile/dashboard.html",{'user':user, 'current_user':current_user,'meal':meal,"amount_remaining":remaining_amount,'meal_type':meal_type})
+    cur_meal = mess_details[current_user.Student.mess][cur_day][meal_type]  
+    # if current_user.Student.is_scanned and meal_type != (current_user.Student.present_meal+ 1)%4:
+    #     return render(request,"user_profile/dashboard.html",{'user':user, 'current_user':current_user,'meal':meal,"amount_remaining":remaining_amount,'meal_type':meal_type,'notice':"You have already Scanned Qr for the Present Meal"})
+    
+    return render(request,"user_profile/dashboard.html",{'user':user, 'current_user':current_user,'meal':meal,"amount_remaining":remaining_amount,'meal_type':meal_type,'cur_meal':cur_meal,'deduct':deduct})
 
 def profile_view(request):
     # qr_val=main()
@@ -137,12 +165,13 @@ def profile_view(request):
         current_user = User.objects.get(id = request.user.id)
         is_scanned = current_user.Student.is_scanned
         print(current_user.Student.present_meal)
-        if meal_type != (current_user.Student.present_meal+ 1)%4:
-            print("here")
-            return redirect('dashboard')
+        # if meal_type != (current_user.Student.present_meal+ 1)%4:
+        #     print("here")
+        #     return redirect('dashboard')
 
-        if is_scanned == True:
-            return redirect('dashboard')
+
+        # if is_scanned == True:
+        #     return redirect('dashboard')
         capture = cv2.VideoCapture(0)
         
         while True:
@@ -173,6 +202,10 @@ def profile_view(request):
         qr_val = val
         if qr_val :
             qr_val=str(qr_val,"utf-8")
+
+            mess_val=current_user.Student.mess
+            if qr_val != mess_arr[mess_val-1]:
+                return redirect('dashboard')
             
             current_user.Student.spend = current_user.Student.spend - deduct
             current_user.Student.present_meal = meal_type%4
