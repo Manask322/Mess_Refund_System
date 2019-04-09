@@ -382,6 +382,7 @@ function DisplayAlert(){
         {% endif %}
     </div>
     {% if request.user.user_profile.is_student %}
+    <p class="section-description" style="padding-bottom: 0px;">Click the button below to verify yourself and scan the QR!</p>
     <center>
             <a href="scan_result"><button type="submit" class="btn btn-danger">Scan QR</button></a>
     </center>

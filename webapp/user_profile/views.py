@@ -32,14 +32,14 @@ def face_recog(path):
     test_face_encoding = face_recognition.face_encodings(test_image)[0]
 
     # Load a second sample picture and learn how to recognize it.
-    biden_image = face_recognition.load_image_file("/home/harshavardhan/sem6/projects/se/Mess_Refund_System/webapp/user_profile/biden.jpg")
-    biden_face_encoding = face_recognition.face_encodings(biden_image)[0]
+    # biden_image = face_recognition.load_image_file("/home/harshavardhan/sem6/projects/se/Mess_Refund_System/webapp/user_profile/biden.jpg")
+    # biden_face_encoding = face_recognition.face_encodings(biden_image)[0]
 
-    harsha_image = face_recognition.load_image_file("/home/harshavardhan/sem6/projects/se/Mess_Refund_System/webapp/user_profile/harsha.jpg")
-    harsha_face_encoding = face_recognition.face_encodings(harsha_image)[0]
+    # harsha_image = face_recognition.load_image_file("/home/harshavardhan/sem6/projects/se/Mess_Refund_System/webapp/user_profile/harsha.jpg")
+    # harsha_face_encoding = face_recognition.face_encodings(harsha_image)[0]
 
-    manas_image = face_recognition.load_image_file("/home/harshavardhan/sem6/projects/se/Mess_Refund_System/webapp/user_profile/manas.jpg")
-    manas_face_encoding = face_recognition.face_encodings(manas_image)[0]
+    # manas_image = face_recognition.load_image_file("/home/harshavardhan/sem6/projects/se/Mess_Refund_System/webapp/user_profile/manas.jpg")
+    # manas_face_encoding = face_recognition.face_encodings(manas_image)[0]
 
     # Cr
     # Create arrays of known face encodings and their names
@@ -264,6 +264,9 @@ def dashboard(request):
     # if current_user.Student.is_scanned and meal_type != (current_user.Student.present_meal+ 1)%4:
     #     return render(request,"user_profile/dashboard.html",{'user':user, 'current_user':current_user,'meal':meal,"amount_remaining":remaining_amount,'meal_type':meal_type,'notice':"You have already Scanned Qr for the Present Meal"})
     
+    return render(request,"user_profile/dashboard.html",{'user':user,'num_already':number_of_students_had_meal ,'students':students,'amount_paid':amount_paid,'total_students':total_student ,'current_user':current_user,'meal':meal,"amount_remaining":remaining_amount,'meal_type':meal_type,'cur_meal':cur_meal,'deduct':deduct})
+
+
 def profile_view(request):
     # qr_val=main()
     # qr_val=str(qr_val,"utf-8")
