@@ -5,6 +5,8 @@ from django.views.generic.edit import FormView
 from django.shortcuts import redirect, reverse
 from user_profile.forms import UserProfileModelForm, UserDetailModelForm, StudentForm, MessmanagerForm
 from django.contrib.auth.models import User
+from django.db.models import Avg, Case, Count, F, Max, Min, Prefetch, Q, Sum, When, Exists, OuterRef, Subquery
+
 
 from user_profile.models import Student, Messmanager
 import datetime as dt
@@ -88,18 +90,18 @@ def dashboard(request):
     current_user = User.objects.get(id = request.user.id)
     remaining_amount = 22000.0 - current_user.Student.spend
     cur_time=dt.datetime.now().hour
+    print(cur_time)
     cur_day=dt.datetime.today().weekday()  
-    print("time is",cur_time )
     if cur_time < 10 and cur_time > 7:
         meal="breakfast"
         meal_type=0
-    elif cur_time > 10 and cur_time < 14:
+    elif cur_time >= 10 and cur_time < 14:
         meal = "lunch"
         meal_type=1
     elif cur_time >= 16 and cur_time < 18 :
         meal = "snacks"
         meal_type =2
-    elif cur_time > 18 and cur_time < 7:
+    elif cur_time >= 18 and cur_time < 7:
         meal ="dinner"
         meal_type = 3
     else:
@@ -123,11 +125,19 @@ def dashboard(request):
         user = current_user.Student
     else:
         user = current_user.Messmanager
+        students = Student.objects.filter(mess=user.mess)
+        total_student = Student.objects.filter(mess=user.mess).count()
+        amount_spend = Student.objects.filter(mess=user.mess).aggregate(Sum('spend'))
+        number_of_students_had_meal = Student.objects.filter(present_meal = meal_type).count()
+        print(amount_spend)
+        for j in amount_spend:
+            amount_paid = amount_spend[j]
+        print("Total Number of Students : ", total_student )
     cur_meal = mess_details[current_user.Student.mess][cur_day][meal_type]  
     # if current_user.Student.is_scanned and meal_type != (current_user.Student.present_meal+ 1)%4:
     #     return render(request,"user_profile/dashboard.html",{'user':user, 'current_user':current_user,'meal':meal,"amount_remaining":remaining_amount,'meal_type':meal_type,'notice':"You have already Scanned Qr for the Present Meal"})
     
-    return render(request,"user_profile/dashboard.html",{'user':user, 'current_user':current_user,'meal':meal,"amount_remaining":remaining_amount,'meal_type':meal_type,'cur_meal':cur_meal,'deduct':deduct})
+    return render(request,"user_profile/dashboard.html",{'user':user,'num_already':number_of_students_had_meal ,'students':students,'amount_paid':amount_paid,'total_students':total_student ,'current_user':current_user,'meal':meal,"amount_remaining":remaining_amount,'meal_type':meal_type,'cur_meal':cur_meal,'deduct':deduct})
 
 def profile_view(request):
     # qr_val=main()

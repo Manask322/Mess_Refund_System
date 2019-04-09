@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
-
+    'django_extensions',
+    
     'user_registration_bs4',
     'bootstrap4',
     'django_thumbs',
@@ -154,6 +155,7 @@ AUTHENTICATION_BACKENDS = (
 ACCOUNT_AUTHENTICATION_METHOD = "email"
 SITE_ID = 1
 
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'  # use this in dev
 # EMAIL_BACKEND = "anymail.backends.sendgrid.EmailBackend" # TODO - use this for a valid email backend (production/staging only)
 

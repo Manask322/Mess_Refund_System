@@ -4,7 +4,7 @@
 {% load i18n %}
 {% load bootstrap4 %}
 
-{% block head_title %}{% trans "User Profile" %}{% endblock %}
+{% block head_title %}{% trans "Dashboard" %}{% endblock %}
 
 {% block content %}
 <br/><br/><br/>
@@ -271,8 +271,17 @@
                 <div class="col-xs-8 col-md-4" >
                     <div class="card1 bg-light text-dark">
                         <div class="card-body">
+                          {% if request.user.user_profile.is_student %}
+                          <!-- {{ user.is_student }} -->
                             <center><strong>Remaining Amount :</strong><br/><br/>
                             {{ user.spend   }}</center>
+                          {% else %}
+                              <center><strong>Total Amount Paid till date</strong>
+                                <br><br>
+                                {{amount_paid}}
+                              </center>
+                          {% endif %}
+                          
                         </div>
                     </div>
                 </div>
@@ -280,18 +289,75 @@
                 <div class="col-xs-2 col-md-4" >
                         <div class="card1 bg-light text-dark">
                             <div class="card-body">
+                              {% if request.user.user_profile.is_student %}
                                 <center><strong>Amount Spent :</strong><br/><br/>
                                 {{ amount_remaining }}</center>
+                              {% else %}
+                              <center>
+                                <strong>
+                                  Total Number of Students : 
+                                </strong><br><br>
+                                {{ total_students }}
+                              </center>
+                              {% endif  %}
                             </div>
                         </div>
                 </div>
+                {% if request.user.user_profile.is_student == False %}
+                <div class="col-xs-2 col-md-4" >
+                    <div class="card1 bg-light text-dark">
+                        <div class="card-body">
+                            <center><strong>Number of Students Already had meal:</strong><br/><br/>
+                            {{ num_already }}</center>
+                          <center>
+                        </div>
+                    </div>
+                  </div>
+                  {% endif %}
+            </div>
             </div>
           </center>
     </div>
     <br/><br/>
+    <hr>
+    <div class="container">
+        <h2><strong>List of Student in your Mess :</strong></h2>
+        {% if request.user.user_profile.is_student == False%}
+          <div class="container">
+            <table class="table table-bordered table-hover ">
+              <thead>
+                <tr>
+                  <th>Roll No</th>
+                  <th>Phone Number</th>
+                  <th>Block</th>
+                  <th>Has done</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for s in students %}
+                <tr>
+                  <td>{{s.student_id}}</td>
+                  <td>{{s.phone_number}}</td>
+                  <td>{{s.block}}</td>
+                  <td>
+                    {% if s.is_scanned %}
+                      Already Had
+                    {%else%}
+                      Yet to Come 
+                    {% endif %}
+                  </td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        {% endif %}
+    </div>
+    {% if request.user.user_profile.is_student %}
     <center>
             <a href="scan_result"><button type="submit" class="btn btn-danger">Scan QR</button></a>
     </center>
+    {% endif %}
 </div>
 
     <!-- The Modal -->
