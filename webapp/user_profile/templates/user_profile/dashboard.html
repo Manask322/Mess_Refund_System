@@ -8,6 +8,12 @@
 
 {% block content %}
 <br/><br/><br/>
+<script type="text/javascript">
+function DisplayAlert(){
+  alert("Verification Failed Please Try Again")
+  console.log("hey")
+}
+</script>
 <style>
  /*.card {
       background: #fff;
@@ -228,6 +234,28 @@
     </div></center>
     <hr>
     <br/>
+
+    {% if messages %}
+      {% for message in messages %}
+      <div class="alert alert-danger" role="alert">
+          <center>{{message}}</center>
+      </div>
+      <!-- <ul class="messages">
+        {% for message in messages %}
+          <li class="success alert">{{ message }}</li>
+        {% endfor %}
+      </ul> -->
+
+      {% endfor %}
+    {% endif %}
+    <!-- {% for message in messages %}
+  <div class="alert {{ message.tags }} alert-dismissible" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    {{ message }}
+  </div> -->
+<!-- {% endfor %} -->
     <p class="section-description">Click the dots to display the respective menu.</p>
     <div class="x_content">
             <div class="row bs-wizard" style="border-bottom:0; margin: 0 auto; margin-top: 2vh">

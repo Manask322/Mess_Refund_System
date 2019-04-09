@@ -14,19 +14,19 @@
         body {font-family: Arial, Helvetica, sans-serif;}
 
         .modal {
-          display: none; 
-          position: fixed; 
-          z-index: 1; 
+          display: none;
+          position: fixed;
+          z-index: 1;
           padding-top: 100px;
           left: 0;
           top: 0;
           width: 100%;
-          height: 100%; 
-          overflow: auto; 
+          height: 100%;
+          overflow: auto;
           background-color: rgb(0,0,0);
-          background-color: rgba(0,0,0,0.4); 
+          background-color: rgba(0,0,0,0.4);
         }
-        
+
         .modal-content {
           position: relative;
           background-color: #fefefe;
@@ -40,13 +40,13 @@
           animation-name: animatetop;
           animation-duration: 0.4s
         }
-        
+
 
         @-webkit-keyframes animatetop {
-          from {top:-300px; opacity:0} 
+          from {top:-300px; opacity:0}
           to {top:0; opacity:1}
         }
-        
+
         @keyframes animatetop {
           from {top:-300px; opacity:0}
           to {top:0; opacity:1}
@@ -58,22 +58,22 @@
           font-size: 28px;
           font-weight: bold;
         }
-        
+
         .close:hover,
         .close:focus {
           color: #000;
           text-decoration: none;
           cursor: pointer;
         }
-        
+
         .modal-header {
           padding: 2px 16px;
           background-color: #fd7e14;
           color: white;
         }
-        
+
         .modal-body {padding: 2px 16px;}
-        
+
         .modal-footer {
           padding: 2px 16px;
           background-color: #fd7e14;
@@ -106,11 +106,11 @@
             <div class="modal-body">
                     <div class="card">
                             <!-- <img class="card-img-top" > -->
-                            
+
                             <div  style="float:left;">
-                                            <center><img src="{{request.user.user_profile.image.url_60x60}}" style="height:200px;width:200px;" 
+                                            <center><img src="{{request.user.user_profile.image.url_60x60}}" style="height:200px;width:200px;"
                                             alt="{{request.user.fullname}}" class="card-img-top"></center>
-                            
+
                             </div>
                             <div  style="float:left;">
                                     <div class="card-body">
@@ -124,7 +124,7 @@
                                           </center>
                                           </div>
                             </div>
-                            
+
                           </div>
 
             </div>
@@ -160,5 +160,5 @@
         <br>
         <br>
         <br>
-        <br>  
+        <br>
 {% endblock %}
