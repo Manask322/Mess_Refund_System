@@ -6,36 +6,72 @@
 {% block head_title %}{% trans "User Profile" %}{% endblock %}
 
 {% block content %}
-<br/><br/><br/>
+<style>
+    .section-header {
+        font-size: 28px;
+        color: #111;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+
+    .section-description {
+        text-align: center;
+        padding-bottom: 40px;
+        color: #999;
+    }
+    button[type="submit"] {
+        background: #868b91;
+        border: 0;
+        padding: 10px 24px;
+        color: #fff;
+        transition: 0.4s;
+    }
+
+        button[type="submit"]:hover {
+            background: #51d8ad;
+        }
+  
+</style>
+<br /><br /><br />
+<center><h2 class="section-header" style="padding-top:8px; margin-bottom:0px;">User Profile</h2></center><br />
+<hr>
 <div class="container mt-3">
-    <div class="row">
+
+    <p class="section-description">Edit user profile details by filling the respective fields.</p>
+    <div class="row" style="font-weight:600;">
         <div class="col col-3 ">
         </div>
 
         <div class="col col-9 ">
 
-            <div class="card">
+            <div class="card" style="width:550px; margin-left:0px;">
                 <div class="card-body">
-                    <h2 class="h6">User Profile Settings</h2>
-                    <hr>
-
                     <form class="form" id="user_update_form" enctype="multipart/form-data" method="post" action=".">
                         {% csrf_token %}
-                        {% bootstrap_form user_detail_form %}
-                        {% bootstrap_form user_profile_form %}
-                        {% if is_student %}
+                        <div style="width:400px;  margin-left:55px;">
+                            {% bootstrap_form user_detail_form %}
+                        </div><hr />
+                        <div style="width:400px;  margin-left:55px;">
+                            {% bootstrap_form user_profile_form %}
+                             
+                        </div><hr />
+                        <div style="width:400px;  margin-left:55px;">
+                            {% if is_student %}
                             {% bootstrap_form student_form %}
-                        {% else  %}
+                            {% else  %}
                             {% bootstrap_form messmanager_form %}
-                        {% endif %}
-                        {% if redirect_field_value %}
-                        <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
-                        {% endif %}
-                        <button type="submit" class="btn btn-primary ">Update Settings</button>
+                            {% endif %}
+                            </div>
+                            {% if redirect_field_value %}
+                            <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+                            {% endif %}<hr />
+                            <center><button type="submit" class="btn btn-danger">Update Settings</button></center>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</div><br />
 {% endblock %}

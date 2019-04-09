@@ -51,12 +51,12 @@ class UserProfileView(TemplateView, LoginRequiredMixin):
                 if student_form.is_valid():
                     student_form.save()
                 else:
-                    print(student_form.errors, "Error in Student form ")
+                    print(student_form.errors, "Error in Student form !")
             else:
                 if messmanager_form.is_valid():
                     messmanager_form.save()
                 else:
-                    print(messmanager_form.errors, "Error in Mess Manager Form")
+                    print(messmanager_form.errors, "Error in Mess Manager Form!")
             user_profile_form.save()
             user_detail_form.save()
             print(request.POST)
