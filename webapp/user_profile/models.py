@@ -38,10 +38,10 @@ class UserProfile(models.Model):
     }
 
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name="user_profile")
-    image = ImageThumbsField(default=None, verbose_name="profile image",
+    image = ImageThumbsField(default=None, verbose_name="profile_image",
                              sizes=SIZES,
                              upload_to=upload_avatar_to, null=True, blank=True)
-    bio = models.TextField(max_length=500, blank=True, null=True, default=None, verbose_name="Write about your self")
+    bio = models.TextField(max_length=500, blank=True, null=True, default=None, verbose_name="Write about yourself...")
     location = models.CharField(max_length=30, blank=True, null=True, default=None)
     birth_date = models.DateField(null=True, blank=True)
     is_student = models.BooleanField(default=True)
@@ -62,10 +62,10 @@ class UserProfile(models.Model):
 
 class Student(models.Model):
     student_id=models.CharField(max_length=10,default="0000")
-    phone_number=models.IntegerField(default=999)
+    phone_number=models.IntegerField(default=1234567892)
     user=models.OneToOneField(User, on_delete=models.CASCADE, related_name="Student")
-    block=models.IntegerField(default=999)
-    mess=models.IntegerField(default=999)
+    block=models.IntegerField(default=4)
+    mess=models.IntegerField(default=0)
     spend=models.FloatField(default=22000)
     is_scanned = models.BooleanField(default=False)
     present_meal = models.IntegerField(default=3)

@@ -53,12 +53,12 @@ class UserProfileView(TemplateView, LoginRequiredMixin):
                 if student_form.is_valid():
                     student_form.save()
                 else:
-                    print(student_form.errors, "Error in Student form ")
+                    print(student_form.errors, "Error in Student form !")
             else:
                 if messmanager_form.is_valid():
                     messmanager_form.save()
                 else:
-                    print(messmanager_form.errors, "Error in Mess Manager Form")
+                    print(messmanager_form.errors, "Error in Mess Manager Form!")
             user_profile_form.save()
             user_detail_form.save()
             print(request.POST)
@@ -92,13 +92,13 @@ def dashboard(request):
     cur_time=dt.datetime.now().hour
     print(cur_time)
     cur_day=dt.datetime.today().weekday()  
-    if cur_time < 10 and cur_time > 7:
+    if cur_time < 10 and cur_time >= 7:
         meal="breakfast"
         meal_type=0
-    elif cur_time >= 10 and cur_time < 14:
+    elif cur_time >= 10 and cur_time <= 14:
         meal = "lunch"
         meal_type=1
-    elif cur_time >= 16 and cur_time < 18 :
+    elif cur_time > 14 and cur_time < 18 :
         meal = "snacks"
         meal_type =2
     elif cur_time >= 18 and cur_time < 7:
@@ -121,6 +121,10 @@ def dashboard(request):
         current_user.Student.is_scanned = False
         current_user.Student.save()
     user_type = current_user.user_profile.is_student
+    number_of_students_had_meal = None
+    total_student = None
+    students = None
+    amount_paid = None
     if user_type:
         user = current_user.Student
     else:

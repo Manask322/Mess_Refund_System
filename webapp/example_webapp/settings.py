@@ -92,14 +92,12 @@ WSGI_APPLICATION = 'example_webapp.wsgi.application'
 
 DATABASES = {
     'default': {
-        # 'ENGINE': 'django.db.backends.mysql',
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'Mess_Refund_System',
+        'NAME':'Mess_Refund_System',
         'USER': 'root',
         'PASSWORD': '123Manas@',
-        'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
+        'HOST': 'localhost',
         'PORT': '3306',
-
     }
 }
 

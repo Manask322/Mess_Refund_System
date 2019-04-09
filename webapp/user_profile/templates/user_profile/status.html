@@ -6,24 +6,39 @@
 {% block head_title %}{% trans "User Status" %}{% endblock %}
 
 {% block content %}
-<br/><br/>
-<div class="container mt-3">
+<br /><br /><br />
+<style>
+    .section-header {
+        font-size: 28px;
+        color: #111;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+</style>
+<center><h2 class="section-header" style="padding-top:8px; margin-bottom:0px;">Account Status</h2></center><br /><hr />
+<div class="container mt-3" style="min-height: 367px; padding-left:90px;">
+
+    
     <div class="row">
         <div class="col col-3 ">
         </div>
+        <center>
+            <div class="col col-9 ">
 
-        <div class="col col-9 ">
+                <div class="card">
+                    <div class="card-body">
 
-            <div class="card">
-                <div class="card-body">
-                    <h2 class="h6">Account Status</h2>
-                    <hr>
-                    <p>This account is currently active. To de-activate, please click the button below, you
-                        can always re-activate your account at anytime.</p>
-                    <button class="btn btn-danger ">De-activate</button>
+                        <p>
+                            This account is currently active. To de-activate, please click the button below, you
+                            can always re-activate your account at anytime.
+                        </p>
+                        <button class="btn btn-danger ">De-activate</button>
+                    </div>
                 </div>
             </div>
-        </div>
+        </center>
     </div>
 </div>
 {% endblock %}

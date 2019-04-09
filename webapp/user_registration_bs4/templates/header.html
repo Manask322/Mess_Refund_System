@@ -17,7 +17,7 @@
     }
     .navbar{
         background-color: #c8641f;
-        opacity: 0.9;
+        opacity: 1;
     }
     .navbar,  .collapse, .navbar-nav, .nav-item{
         font-size:20px;
@@ -36,11 +36,11 @@
 </style>
 <nav class="navbar navbar-expand-lg navbar-toggleable-md navbar-dark fixed-top scrolling-navbar" >
     {% if request.user.is_authenticated %}
-        <p class="navbar-brand to-open" style="cursor:pointer; color:#8E3E08; padding-left: 10px; padding-bottom: 0px; margin-bottom: 0px; padding-top: 0px; size:20px;" onclick="openNav()">&#9776;</p>
+    <strong><p class="navbar-brand to-open" style="cursor:pointer; color:#8E3E08; padding-left: 10px; padding-bottom: 0px; margin-bottom: 0px; padding-top: 0px; size:20px; font-weight:700;" onclick="openNav()">&#9776;</p></strong>
     {% endif %}
     <div class="container header">
 
-        <a class="navbar-brand " href="/" style="font-family: 'Alex Brush', sans-serif; font-size: 30px;">Rimborso</a>
+        <a class="navbar-brand " href="/" style="font-family: 'Alex Brush', sans-serif; font-size: 30px;">RS</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapseEx12" aria-controls="collapseEx2" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -66,9 +66,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/accounts/signup/">Signup</a>
                 </li>
-                <li class="nav-item" >
+                <!--<li class="nav-item" >
                     <a class="nav-link" href="{{ activate_url }}">Activate URL</a>
-                </li>
+                </li>-->
                 {% endif %}
 
             </ul>

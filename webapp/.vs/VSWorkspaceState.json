@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\media",
+    "\\user_profile",
+    "\\user_profile\\templates",
+    "\\user_profile\\templates\\user_profile",
+    "\\user_registration_bs4",
+    "\\user_registration_bs4\\templates",
+    "\\user_registration_bs4\\templates\\socialaccount\\snippets",
+    "\\webpages",
+    "\\webpages\\templates"
+  ],
+  "SelectedNode": "\\webpages\\templates\\webpages\\homepage.html",
+  "PreviewInSolutionExplorer": false
+}
